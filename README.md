@@ -1,4 +1,5 @@
-Verified working based upon Lucasnewman forum responses. Checkpoint shared used 1.2.12. Requirements txt included though configs file needs to be updated prior to use.
+Verified working based upon Lucasnewman forum responses. Checkpoint shared used 1.2.12. Requirements txt included though configs file needs to be updated prior to use. Lucasnewman trained successfully. 50k generator only warmup then turned on discriminators, A100. Used dev-clean subset. Data length 1 s. no EMA, 17.5 hours.
+https://github.com/lucidrains/audiolm-pytorch/discussions/107
 
 
 <img src="./audiolm.png" width="600px"></img>
