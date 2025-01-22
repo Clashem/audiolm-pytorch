@@ -1,6 +1,7 @@
-Verified working based upon Lucasnewman forum responses who used 1.2.12 for training. His shared 100000.pt file was verified to work. Requirements txt included though configs file needs to be updated prior to use. Lucasnewman trained successfully. 50k generator only warmup then turned on discriminators, A100. Used dev-clean subset. Data length 1 s. no EMA, 17.5 hours.
+Verified working based upon Lucasnewman forum responses who used 1.2.12 for training. His shared 100000.pt file was verified to work was was trained on 50k generator only warmup then 50k on discriminators with A100. Used dev-clean subset. Data length 1 s. no EMA, 17.5 hours.
 https://github.com/lucidrains/audiolm-pytorch/discussions/107
 
+Requirements txt generated based upon working build. However configs file needs to be updated prior to use (see below).
 Site-packages\fairseq\dataclass\configs.py and Lib\site-packages\audiolm_pytorch\__init__.py need to be modified such that:
     Open the file and find the CommonConfig or related mutable defaults.
     Replace the problematic @dataclass fields with field(default_factory=...).
