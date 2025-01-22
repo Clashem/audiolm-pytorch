@@ -1,3 +1,6 @@
+Verified working based upon Lucasnewman forum responses. Checkpoint shared used 1.2.12. Requirements txt included though configs file needs to be updated prior to use.
+
+
 <img src="./audiolm.png" width="600px"></img>
 
 ## AudioLM - Pytorch
